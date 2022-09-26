@@ -19,16 +19,16 @@ var score = 0;
 var high_scores = [];
 
 /**
- * user procided right answer
+ * user provided the right answer
  *
- * @param      {number}  nxt index of The next function to call
+ * @param      {number}  nxt index of the next function to call
  */
 function right(nxt) {
   // display the line element dynamically
   document.getElementById("line").style.display = "block";
   // display the message element dynamically
   document.getElementById("mark").style.display = "block";
-  // display the message about answered question dynamically
+  // display the message about answered the questions dynamically
   document.getElementById("mark").innerHTML = "Correct!";
   // increase score
   score += 10;
@@ -50,7 +50,7 @@ function wrong(nxt) {
   document.getElementById("line").style.display = "block";
   // display the message element dynamically
   document.getElementById("mark").style.display = "block";
-  // display the message about answered question dynamically
+  // display the message about answered questions dynamically
   document.getElementById("mark").innerHTML = "Wrong!";
   // subtract the time remaining
   remainig_time -= 10;
@@ -63,7 +63,7 @@ function wrong(nxt) {
 }
 
 /**
- * the first question
+ * Question 1
  */
 function question1() {
   // get html element
@@ -73,22 +73,22 @@ function question1() {
   center.innerHTML = "";
   // dynamically change the question
   center.innerHTML = `<h1 class="font"><b>Commonly used datatypes do not include: </b></h1>
-  					   <div style="clear:both;"></div>`;
+               <div style="clear:both;"></div>`;
   // dynamically change the options by adding buttons
   // buttons have relevant callbacks
   center.innerHTML += `<button  class="btn left" onclick="wrong(1)">1. strings</button>
-  					    <div style="clear:both;"></div>`;
+                <div style="clear:both;"></div>`;
   center.innerHTML += `<button  class="btn left" onclick="wrong(1)">2. booleans</button>
-  					   <div style="clear:both;"></div>`;
+               <div style="clear:both;"></div>`;
   center.innerHTML += `<button  class="btn left"onclick="right(1)">3. alerts</button>
-  					   <div style="clear:both;"></div>`;
+               <div style="clear:both;"></div>`;
   center.innerHTML += `<button  class="btn left"onclick="wrong(1)">4. numbers</button>
-  					   <div style="clear:both;"></div>`;
+               <div style="clear:both;"></div>`;
 }
 // add function to sequence
 sequence.push(question1);
 /**
- * the second question
+ * Question 2
  */
 function question2() {
   // get html element
@@ -98,22 +98,22 @@ function question2() {
   // console.log(center)
   // dynamically change the question
   center.innerHTML = `<h1 class="font"><b>The condition of an if else statement is enclosed with__ </b></h1>
-  					   <div style="clear:both;"></div>`;
+               <div style="clear:both;"></div>`;
   // dynamically change the options by adding buttons
   // buttons have relevant callbacks
   center.innerHTML += `<button  class="btn left" onclick="wrong(2)">1. quotes</button>
-  					    <div style="clear:both;"></div>`;
+                <div style="clear:both;"></div>`;
   center.innerHTML += `<button  class="btn left" onclick="wrong(2)">2. curly brackets</button>
-  					   <div style="clear:both;"></div>`;
+               <div style="clear:both;"></div>`;
   center.innerHTML += `<button  class="btn left"onclick="right(2)">3. parentesis</button>
-  					   <div style="clear:both;"></div>`;
+               <div style="clear:both;"></div>`;
   center.innerHTML += `<button  class="btn left"onclick="wrong(2)">4. square brackets</button>
-  					   <div style="clear:both;"></div>`;
+               <div style="clear:both;"></div>`;
 }
 // add function to sequence
 sequence.push(question2);
 /**
- * question 3
+ * Question 3
  */
 function question3() {
   // get html element
@@ -123,22 +123,22 @@ function question3() {
   // dynamically change the question
   center.innerHTML = "";
   center.innerHTML = `<h1 class="font"><b>Arrays in JavaScript can be used to store ____</b></h1>
-  					   <div style="clear:both;"></div>`;
+               <div style="clear:both;"></div>`;
   // dynamically change the options by adding buttons
   // buttons have relevant callbacks
   center.innerHTML += `<button  class="btn left" onclick="wrong(3)">1. numbers and strings</button>
-  					    <div style="clear:both;"></div>`;
+                <div style="clear:both;"></div>`;
   center.innerHTML += `<button  class="btn left" onclick="wrong(3)">2. other arrays</button>
-  					   <div style="clear:both;"></div>`;
+               <div style="clear:both;"></div>`;
   center.innerHTML += `<button  class="btn left"onclick="wrong(3)">3. booleans</button>
-  					   <div style="clear:both;"></div>`;
+               <div style="clear:both;"></div>`;
   center.innerHTML += `<button  class="btn left"onclick="right(3)">4. all the above</button>
-  					   <div style="clear:both;"></div>`;
+               <div style="clear:both;"></div>`;
 }
 // add function to sequence
 sequence.push(question3);
 /**
- * question 4
+ * Question 4
  */
 function question4() {
   // get html element
@@ -148,22 +148,22 @@ function question4() {
   // dynamically change the question
   center.innerHTML = "";
   center.innerHTML = `<h1 class="font"><b>String values must be enclosed within ____ when being assigned to variables</b></h1>
-  					   <div style="clear:both;"></div>`;
+               <div style="clear:both;"></div>`;
   // dynamically change the options by adding buttons
   // buttons have relevant callbacks
   center.innerHTML += `<button  class="btn left" onclick="wrong(5)">1. commas</button>
-  					    <div style="clear:both;"></div>`;
+                <div style="clear:both;"></div>`;
   center.innerHTML += `<button  class="btn left" onclick="wrong(5)">2. curly brackects</button>
-  					   <div style="clear:both;"></div>`;
+               <div style="clear:both;"></div>`;
   center.innerHTML += `<button  class="btn left"onclick="right(5)">3. quotes</button>
-  					   <div style="clear:both;"></div>`;
+               <div style="clear:both;"></div>`;
   center.innerHTML += `<button  class="btn left"onclick="wrong(5)">4. parenthesis</button>
-  					   <div style="clear:both;"></div>`;
+               <div style="clear:both;"></div>`;
 }
 // add function to sequence
 sequence.push(question4);
 /**
- * quesion 5
+ * Question 5
  */
 function question5() {
   var center = document.getElementById("middle");
@@ -172,22 +172,22 @@ function question5() {
   // dynamically change the question
   center.innerHTML = "";
   center.innerHTML = `<h1 class="font">
-  						<b>
-  						A very useful tool during development and debugging from printing 
-  						content to the debbuger is ________
-  						</b>
-  					   </h1>
-  					   <div style="clear:both;"></div>`;
+              <b>
+              A very useful tool during development and debugging from printing 
+              content to the debbuger is ________
+              </b>
+               </h1>
+               <div style="clear:both;"></div>`;
   // dynamically change the options by adding buttons
   // buttons have relevant callbacks
   center.innerHTML += `<button  class="btn left" onclick="wrong(6)">1. JavaScript</button>
-  					    <div style="clear:both;"></div>`;
+                <div style="clear:both;"></div>`;
   center.innerHTML += `<button  class="btn left" onclick="wrong(6)">2. terminal/bash</button>
-  					   <div style="clear:both;"></div>`;
+               <div style="clear:both;"></div>`;
   center.innerHTML += `<button  class="btn left"onclick="wrong(6)">3. for loops</button>
-  					   <div style="clear:both;"></div>`;
+               <div style="clear:both;"></div>`;
   center.innerHTML += `<button  class="btn left"onclick="right(6)">4. console.log</button>
-  					   <div style="clear:both;"></div>`;
+               <div style="clear:both;"></div>`;
 }
 // add function to sequence
 sequence.push(question5);
@@ -203,14 +203,14 @@ function results() {
   // console.log(center)
   // dynamically change the header
   center.innerHTML = `<h1 class="font">
-  						<b>
-  						All Done !
-  						</b>
-  					   </h1>
-  					   <div style="clear:both;"></div>`;
+              <b>
+              All Done !
+              </b>
+               </h1>
+               <div style="clear:both;"></div>`;
   // dynamically add element print score
   center.innerHTML += `<h3 style="font-size: 20px;">Your Final Score is ${score}</h3>
-  					    <div style="clear:both;"></div>`;
+                <div style="clear:both;"></div>`;
   // dynamically add input element to string for user name
   center.innerHTML += `<p style="float:left;font-size: 20px;">Enter Initials:&nbsp;</p>`;
   center.innerHTML += `<input style="float:left;" type="text" id="fname" name="fname" value="">`;
@@ -242,7 +242,7 @@ function restore_start_page() {
   center.innerHTML = memento.original;
 }
 /**
- * show the sores of all the users
+ * Show the scores of all the users
  */
 function high_scores_func() {
   // hide line
@@ -256,15 +256,14 @@ function high_scores_func() {
   // console.log(center)
   // dynamically chage it
   center.innerHTML = `<h1 class="font">
-  						<b>
-  						High Scores
-  						</b>
-  					   </h1>
-  					   <div style="clear:both;"></div>`;
+              <b>
+              High Scores
+              </b>
+               </h1>
+               <div style="clear:both;"></div>`;
 
   /**
    * compare two objects
-   *
    * @param      {object}  a       { first object }
    * @param      {object}  b       { second object }
    * @return     {number}  { description_of_the_return_value }
@@ -286,14 +285,14 @@ function high_scores_func() {
       item.score
     }<br><br>`;
   });
-  // dynamically  add go back button
+  // dynamically add go back button
   center.innerHTML += `<button  style="padding: 7px 17px;" class="btn" onclick="restore_start_page()">go back</button>`;
-  // dynamically add object to clear hing scores
+  // dynamically add object to clear high scores
   center.innerHTML += `<button  style="padding: 7px 17px;" class="btn" onclick="clear_high_scores()">clear high scores</button>`;
 }
 
 /**
- * function to take users name
+ * function will take users name
  */
 function take_fname() {
   // get element
@@ -308,7 +307,7 @@ function take_fname() {
   // reset score
   score = 0;
   //console.log(your_scores);
-  // print hing scores function
+  // print high scores function
   high_scores_func();
 }
 
