@@ -195,7 +195,7 @@ sequence.push(question5);
  * function to print results
  */
 function results() {
-  // crear the timer
+  // create the timer
   clearInterval(time);
   // get middle element
   var center = document.getElementById("middle");
@@ -254,7 +254,7 @@ function high_scores_func() {
   var center = document.getElementById("middle");
   center.innerHTML = "";
   // console.log(center)
-  // dynamically chage it
+  // dynamically change it
   center.innerHTML = `<h1 class="font">
               <b>
               High Scores
@@ -297,7 +297,7 @@ function high_scores_func() {
 function take_fname() {
   // get element
   fname = document.getElementById("fname").value;
-  // if name is not provided refuse order
+  // if the name is not provided refuse order
   if (fname === "") {
     alert("you must provide a name!");
     return;
