@@ -41,7 +41,7 @@ function right(nxt) {
 }
 
 /**
- * user procided wrong answer
+ * user provided a wrong answer
  *
  * @param      {number}  nxt index of The next function to call
  */
@@ -220,7 +220,7 @@ function results() {
 // add function to sequence
 sequence.push(results);
 /**
- * clear hing scre
+ * clear high score
  */
 function clear_high_scores() {
   high_scores = [];
